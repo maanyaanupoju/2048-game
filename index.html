@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - Premium Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Best Practices -->
+    <meta name="description" content="Play the 2048 game in a beautiful yellow, orange, and red premium theme. Join the numbers and get to the 2048 tile!">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <div class="header-left">
+                <h1>2048</h1>
+                <p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+            </div>
+            <div class="header-right">
+                <div class="score-container">
+                    <div class="score-box">
+                        <span class="score-label">SCORE</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="score-label">BEST</span>
+                        <span id="best-score">0</span>
+                    </div>
+                </div>
+                <button id="new-game-btn">New Game</button>
+            </div>
+        </header>
+
+        <main class="game-board" id="game-board">
+            <!-- 16 grid cells for the background -->
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            
+            <div id="game-over">
+                <h2>Game Over!</h2>
+                <button id="restart-btn">Try Again</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
